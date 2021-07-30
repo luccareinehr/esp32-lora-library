@@ -5,7 +5,7 @@
 The library itself is based on sandeepmistry's **arduino-LoRa** (https://github.com/sandeepmistry/arduino-LoRa) library for Arduino.
 
 ## How to install
-Simply clone the repository and copy the ~~```components/lora```~~ **```home```** directory into your ESP-IDF project directory or into the ```components/``` path of your $IDF_PATH (it will be public to all your projects).
+Simply clone the repository and copy the ~~```components/lora```~~ **```lora```** directory into your ESP-IDF project directory or into the ```components/``` path of your $IDF_PATH (it will be public to all your projects).
 You can then simply ```#include "lora.h"``` and use its functions.
 Using ```make menuconfig``` there will be LoRa Options to configure (like pin numbers)
 
