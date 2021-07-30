@@ -5,13 +5,13 @@
 The library itself is based on sandeepmistry's **arduino-LoRa** (https://github.com/sandeepmistry/arduino-LoRa) library for Arduino.
 
 ## How to install
-Simply clone the repository and copy the ```components/lora``` directory into your ESP-IDF project directory or into the ```components/``` path of your $IDF_PATH (it will be public to all your projects).
+Simply clone the repository and copy the ~~```components/lora```~~ **```home```** directory into your ESP-IDF project directory or into the ```components/``` path of your $IDF_PATH (it will be public to all your projects).
 You can then simply ```#include "lora.h"``` and use its functions.
 Using ```make menuconfig``` there will be LoRa Options to configure (like pin numbers)
 
 ```bash
 git clone https://github.com/Inteform/esp32-lora-library
-cp -r esp32-lora-library/components /path/to/my/esp32/project
+cp -r esp32-lora-library/ /path/to/my/esp32/project/components
 cd /path/to/my/esp32/project
 make menuconfig
 make
@@ -84,8 +84,8 @@ Pin | Signal
 --- | ------
 CS | IO15
 RST | IO32
-MISO | IO13 
+MISO | IO13
 MOSI | IO12
 SCK | IO14
 
-but you can reconfigure the pins using ```make menuconfig``` and changing the options in the "LoRa Options --->"
+but you can reconfigure the pins using ```make menuconfig``` and changing the options in the "Component options -> LoRa Options"
