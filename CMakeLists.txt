@@ -1,5 +1,5 @@
-set(COMPONENT_SRCS
-    "lora.c")
-set(COMPONENT_ADD_INCLUDEDIRS "include")
-
-register_component()
+idf_component_register(
+    SRCS lora.c
+    INCLUDE_DIRS .
+    REQUIRES freertos esp_system driver soc
+)

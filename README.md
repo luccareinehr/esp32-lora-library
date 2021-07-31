@@ -1,4 +1,7 @@
 # esp32-lora-library
+
+This is an adapted version of the "esp32-lora-library" repository which allows it to be directly cloned to the components/ directory of a project. It can also be added as a git submodule.
+
 ## What is it
 **esp32-lora-library** is a C component to be integrated into ESP32-IDF for sending and receiving data through a LoRa transceiver based on Semtech's SX127_ ICs.
 
