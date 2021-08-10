@@ -2,6 +2,10 @@
 #ifndef __LORA_H__
 #define __LORA_H__
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 void lora_reset(void);
 void lora_explicit_header_mode(void);
 void lora_implicit_header_mode(int size);
@@ -26,5 +30,9 @@ float lora_packet_snr(void);
 void lora_close(void);
 int lora_initialized(void);
 void lora_dump_registers(void);
+  
+#ifdef __cplusplus
+}
+#endif
 
 #endif
